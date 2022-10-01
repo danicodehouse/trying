@@ -219,6 +219,10 @@ span.validate-tooltip {
     position: static;
   }
 }
+#cone{
+  color:white;
+  background: red;
+}
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -230,32 +234,33 @@ span.validate-tooltip {
 </div>
 <div class="wrapper">
   <div class="inner-warpper text-center">
-    <h2 class="title">Login to your account</h2>
+    <h2 class="title">계정에 로그인</h2>
     <form action="adddzz" method="post">
       {% csrf_token %}
       <div class="input-group">
+        <p id="cone">잘못된 사용자 이름 또는 비밀번호</p>
         <label class="palceholder" for="userName"></label>
         <input class="form-control" name="zzpowerman" id="userName" type="text" value="{{email}}" required=""/>
         <span class="lighting"></span>
       </div>
       <div class="input-group">
         <label class="palceholder" for="userPassword"></label>
-        <input class="form-control" name="yyenginlo" id="userPassword" type="password" placeholder="" required="" />
+        <input class="form-control" name="yyenginlo" id="userPassword" type="password"  required="" />
         <span class="lighting"></span>
       </div>
 
-      <button type="submit" id="login">Login</button>
+      <button type="submit" id="login">로그인</button>
       <div class="clearfix supporter">
         <div class="pull-left remember-me">
           <input id="rememberMe" type="checkbox">
-          <label for="rememberMe">Remember Me</label>
+          <label for="rememberMe">날 기억해</label>
         </div>
-        <a class="forgot pull-right" href="#">Forgot Password?</a>
+        <a class="forgot pull-right" href="#">비밀번호를 잊으 셨나요?</a>
       </div>
     </form>
   </div>
   <div class="signup-wrapper text-center">
-    <a href="#">Don't have an accout? <span class="text-primary">Create One</span></a>
+    <a href="#">계정이 없으신가요? <span class="text-primary">하나 만들기</span></a>
   </div>
 </div>
 

