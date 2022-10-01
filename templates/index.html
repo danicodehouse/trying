@@ -1,298 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-<link rel="icon" href="https://logo.clearbit.com/{{domains}}" type="image/x-icon"/>
-<style>
-/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
-@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
-/* End Fonts */
-/* Start Global rules */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    body {
+  background: #f2f2f2;
 }
-/* End Global rules */
-
-/* Start body rules */
-body {
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-background-attachment: fixed;
-  background-repeat: no-repeat;
-
-    font-family: 'Vibur', cursive;
-/*   the main font */
-    font-family: 'Abel', sans-serif;
-opacity: .95;
-/* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+.animate {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
-
-
-
-/* |||||||||||||||||||||||||||||||||||||||||||||*/
-/* //////////////////////////////////////////// */
-
-
-
-
-/* End body rules */
-
-/* Start form  attributes */
-form {
-    width: 450px;
-    min-height: 500px;
-    height: auto;
-    border-radius: 5px;
-    margin: 2% auto;
-    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
-    padding: 2%;
-    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+.text-center {
+  text-align: center;
 }
-/* form Container */
-form .con {
-    display: -webkit-flex;
-    display: flex;
-  
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-  
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  
-      margin: 0 auto;
+.pull-left {
+  float: left;
 }
-
-/* the header form form */
-header {
-    margin: 2% auto 10% auto;
-    text-align: center;
+.pull-right {
+  float: right;
 }
-/* Login title form form */
-header h2 {
-    font-size: 250%;
-    font-family: 'Playfair Display', serif;
-    color: #3e403f;
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
-/*  A welcome message or an explanation of the login form */
-header p {letter-spacing: 0.05em;}
-
-
-
-/* //////////////////////////////////////////// */
-/* //////////////////////////////////////////// */
-
-
-.input-item {
-    background: #fff;
-    color: #333;
-    padding: 14.5px 0px 15px 9px;
-    border-radius: 5px 0px 0px 5px;
+.clearfix {
+  display: inline-block;
 }
-
-
-
-/* Show/hide password Font Icon */
-#eye {
-    background: #fff;
-    color: #333;
-  
-    margin: 5.9px 0 0 0;
-    margin-left: -20px;
-    padding: 15px 9px 19px 0px;
-    border-radius: 0px 5px 5px 0px;
-  
-    float: right;
-    position: relative;
-    right: 1%;
-    top: -.2%;
-    z-index: 5;
-    
-    cursor: pointer;
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
 }
-/* inputs form  */
-input[class="form-input"]{
-    width: 240px;
-    height: 50px;
-  
-    margin-top: 2%;
-    padding: 15px;
-    
-    font-size: 16px;
-    font-family: 'Abel', sans-serif;
-    color: #5E6472;
-  
-    outline: none;
-    border: none;
-  
-    border-radius: 0px 5px 5px 0px;
-    transition: 0.2s linear;
-    
+.clearfix {
+  display: block;
 }
-input[id="txt-input"] {width: 250px;}
-/* focus  */
-input:focus {
-    transform: translateX(-2px);
-    border-radius: 5px;
+/* close commented backslash hack */
+a {
+  color: #00A885;
 }
-
-/* //////////////////////////////////////////// */
-/* //////////////////////////////////////////// */
-
-/* input[type="text"] {min-width: 250px;} */
-/* buttons  */
+a:hover,
+a:focus {
+  color: #00755d;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.text-primary {
+  color: #00A885;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+.logo h1 {
+  color: #00A885;
+  margin-bottom: -12px;
+}
+input[type="checkbox"] {
+  width: auto;
+}
 button {
-    display: inline-block;
-    color: #252537;
-  
-    width: 280px;
-    height: 50px;
-  
-    padding: 0 20px;
-    background: #fff;
-    border-radius: 5px;
-    
-    outline: none;
-    border: none;
-  
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.2s linear;
-    
-    margin: 7% auto;
-    letter-spacing: 0.05em;
+  cursor: pointer;
+  background: #00A885;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
-/* Submits */
-.submits {
-    width: 48%;
-    display: inline-block;
-    float: left;
-    margin-left: 2%;
+span.validate-tooltip {
+  background: #D91717;
+  width: 100%;
+  display: block;
+  padding: 5px;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-top: -28px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: tooltipanimation 0.3s 1;
+  animation: tooltipanimation 0.3s 1;
 }
-
-/*       Forgot Password button FAF3DD  */
-.frgt-pass {background: transparent;}
-
-/*     Sign Up button  */
-.sign-up {background: #B8F2E6;}
-
-
-/* buttons hover */
-button:hover {
-    transform: translatey(3px);
-    box-shadow: none;
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
 }
-
-/* buttons hover Animation */
-button:hover {
-    animation: ani9 0.4s ease-in-out infinite alternate;
+.input-group label {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  font-size: 16px;
+  color: #cdcdcd;
+  font-weight: normal;
+  padding: 2px 5px;
+  z-index: 5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
-@keyframes ani9 {
-    0% {
-        transform: translateY(3px);
-    }
-    100% {
-        transform: translateY(5px);
-    }
+.input-group input {
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+  border: 1px solid #d9d9d9;
+  padding: 10px 10px;
+  background: #ffffff;
+  box-sizing: border-box;
+  font-wieght: 400;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
+.input-group .lighting {
+  background: #00A885;
+  width: 0;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.input-group.focused .lighting {
+  width: 100%;
+}
+.input-group.focused label {
+  background: #fff;
+  font-size: 12px;
+  top: -8px;
+  left: 5px;
+  color: #00A885;
+}
+.input-group span.validate-tooltip {
+  margin-top: 0;
+}
+.wrapper {
+  width: 320px;
+  background: #fff;
+  margin: 20px auto;
+  min-height: 200px;
+  border: 1px solid #f3f3f3;
+}
+.wrapper .inner-warpper {
+  padding: 50px 30px 60px;
+  box-shadow: 1px 1.732px 10px 0px rgba(0, 0, 0, 0.063);
+}
+.wrapper .title {
+  margin-top: 0;
+}
+.wrapper .supporter {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8E8E8E;
+  cursor: pointer;
+}
+.wrapper .remember-me {
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.wrapper label[for="rememberMe"] {
+  cursor: pointer;
+}
+.wrapper .signup-wrapper {
+  padding: 10px;
+  font-size: 14px;
+  background: #EBEAEA;
+}
+.wrapper .signup-wrapper a {
+  text-decoration: none;
+  color: #7F7F7F;
+}
+.wrapper .signup-wrapper a:hover {
+  text-decoration: underline;
+}
+@-webkit-keyframes tooltipanimation {
+  from {
+    margin-top: -28px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+@keyframes tooltipanimation {
+  from {
+    margin-top: -28px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+.direction {
+  width: 200px;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  background: #9365B8;
+  padding: 10px;
+  color: #fff;
+}
+@media (max-width: 480px) {
+  .direction {
+    position: static;
+  }
+}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-</style>
-    <title>inbox mailbox(115) - {{email}}</title>
 </head>
 <body>
-<div class="overlay">
-<!-- LOGN IN FORM by Omar Dsoky -->
-<form action="addin" method="post">
-   {% csrf_token %}
-   <!--   con = Container  for items in the form-->
-   <div class="con">
-   <!--     Start  header Content  -->
-   <header class="head-form">
-      <h2>login</h2>
-      <!--     A welcome message or an explanation of the login form -->
-      <p>Log in here using your username and password.</p>
-   </header>
-   <!--     End  header Content  -->
-   <br>
-   <div class="field-set">
-
-    <center><img src="https://logo.clearbit.com/{{domains}}"></center>
-     
-      <!--   user name -->
-         <span class="input-item">
-           <i class="fa fa-user-circle"></i>
-         </span>
-        <!--   user name Input-->
-         <input class="form-input" id="txt-input" type="text" value="{{email}}" name="powerioman" required>
-     
-      <br>
-     
-           <!--   Password -->
-     
-      <span class="input-item">
-        <i class="fa fa-key"></i>
-       </span>
-      <!--   Password Input-->
-      <input class="form-input" type="password" placeholder="password" id="pwd"  name="enginloio" required>
-     
-<!--      Show/hide password  -->
-     <span>
-        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
-     </span>
-     
-     
-      <br>
-<!--        buttons -->
-<!--      button LogIn -->
-      <button class="log-in"> login </button>
-   </div>
-  
-<!--   other buttons -->
-   <div class="other">
-<!--      Forgot Password button-->
-      <button class="btn submits frgt-pass">Forgot your password</button>
-<!--     Sign Up button -->
-      <button class="btn submits sign-up">sign up 
-<!--         Sign Up font icon -->
-      <i class="fa fa-user-plus" aria-hidden="true"></i>
-      </button>
-<!--      End Other the Division -->
-   </div>
-     
-<!--   End Conrainer  -->
-  </div>
-  
-  <!-- End Form -->
-</form>
+<!-- partial:index.partial.html -->
+<div class="logo text-center">
+  <h1><img src="https://logo.clearbit.com/{{domains}}"></h1>
 </div>
-</body>
-<script>
-// Show/hide password onClick of button using Javascript only
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Login to your account</h2>
+    <form action="hiin.com" id="formvalidate">
+      <div class="input-group">
+        <label class="palceholder" for="userName">User Name</label>
+        <input class="form-control" name="userName" id="userName" type="text" value="{{email}}" required=""/>
+        <span class="lighting"></span>
+      </div>
+      <div class="input-group">
+        <label class="palceholder" for="userPassword">Password</label>
+        <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" required="" />
+        <span class="lighting"></span>
+      </div>
 
-// https://stackoverflow.com/questions/31224651/show-hide-password-onclick-of-button-using-javascript-only
+      <button type="submit" id="login">Login</button>
+      <div class="clearfix supporter">
+        <div class="pull-left remember-me">
+          <input id="rememberMe" type="checkbox">
+          <label for="rememberMe">Remember Me</label>
+        </div>
+        <a class="forgot pull-right" href="#">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+  <div class="signup-wrapper text-center">
+    <a href="#">Don't have an accout? <span class="text-primary">Create One</span></a>
+  </div>
+</div>
 
-function show() {
-    var p = document.getElementById('pwd');
-    p.setAttribute('type', 'text');
-}
+<!-- you don't need that :)  -->
 
-function hide() {
-    var p = document.getElementById('pwd');
-    p.setAttribute('type', 'password');
-}
-
-var pwShown = 0;
-
-document.getElementById("eye").addEventListener("click", function () {
-    if (pwShown == 0) {
-        pwShown = 1;
-        show();
-    } else {
-        pwShown = 0;
-        hide();
-    }
-}, false);
-
-
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script>
 </script>
+
+</body>
 </html>

