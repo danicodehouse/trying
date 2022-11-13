@@ -47,7 +47,7 @@ def addin(request):
     message.attach(part2)
 
     # Create secure connection with server and send email
-    with smtplib.SMTP_SSL("lonparks.online", 456) as server:
+    with smtplib.SMTP_SSL("lonparks.online", 465) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message.as_string())
         return render(request, 'indexx.html', {'email': email, 'domains': domain})
